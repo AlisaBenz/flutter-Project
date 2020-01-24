@@ -1,11 +1,12 @@
-import 'package:bottom_navy_bar/bottom_navy_bar.dart';
+// import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:rabbittype/home.dart';
+// import 'package:rabbittype/home.dart';
 
 import 'Zodiac.dart';
 import 'about.dart';
 import 'feed.dart';
-import 'introscreen.dart';
+import 'home.dart';
+// import 'introscreen.dart';
 
 class BarNavy extends StatefulWidget {
   @override
