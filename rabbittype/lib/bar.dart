@@ -1,6 +1,6 @@
-// import 'package:bottom_navy_bar/bottom_navy_bar.dart';
+import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
-// import 'package:rabbittype/home.dart';
+import 'package:rabbittype/home.dart';
 
 import 'Zodiac.dart';
 import 'about.dart';

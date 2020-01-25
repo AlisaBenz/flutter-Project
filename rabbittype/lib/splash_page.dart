@@ -12,7 +12,7 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     return SplashScreen(
-        seconds: 3,
+        seconds: 5,
         navigateAfterSeconds: BarNavy(),
         title: Text(
           'RABBIT MYAPP',
@@ -22,8 +22,7 @@ class _SplashPageState extends State<SplashPage> {
               color: Colors.pink[300],
               fontStyle: FontStyle.italic),
         ),
-        image: Image.asset(
-            'https://raw.githubusercontent.com/AlisaBenz/flutter-Project/master/rabbittype/assets/icons/Rabbit1.gif'),
+        image: Image.asset('assets/icons/Rabbit1.gif'),
         backgroundColor: Colors.orange[300],
         styleTextUnderTheLoader: TextStyle(color: Colors.deepPurple),
         photoSize: 150.0,

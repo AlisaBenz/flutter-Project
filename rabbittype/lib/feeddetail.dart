@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'top.dart';
 
-class PokeDetail extends StatelessWidget {
+class FeedDetail extends StatelessWidget {
   final Pokemon pokemon;
 
-  PokeDetail({this.pokemon});
+  FeedDetail({this.pokemon});
 
   bodyWidget(BuildContext context) => Stack(
         children: <Widget>[

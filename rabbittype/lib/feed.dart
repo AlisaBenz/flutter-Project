@@ -13,7 +13,7 @@ class FeedPage extends StatefulWidget {
 
 class FeedPageState extends State<FeedPage> {
   var url =
-      "https://github.com/AlisaBenz/flutter-Project/blob/master/rabbittype/assets/icons/feed.json";
+      "https://raw.githubusercontent.com/AlisaBenz/flutter-Project/master/rabbittype/assets/icons/feed.json";
 
   PokeHub pokeHub;
 
@@ -54,7 +54,7 @@ class FeedPageState extends State<FeedPage> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => PokeDetail(
+                                    builder: (context) => FeedDetail(
                                           pokemon: poke,
                                         )));
                           },
