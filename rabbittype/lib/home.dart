@@ -1,66 +1,44 @@
 import 'package:flutter/material.dart';
-import 'package:intro_slider/dot_animation_enum.dart';
-import 'package:intro_slider/intro_slider.dart';
-import 'package:intro_slider/slide_object.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({Key key}) : super(key: key);
-
   @override
-  HomePageState createState() => new HomePageState();
+  HomePageState createState() {
+    return new HomePageState();
+  }
 }
 
-class HomePageState extends State<HomePage> {
-  double size = 200;
+class HomePageState extends State<HomePage> with TickerProviderStateMixin {
+  double currentOpacity = 0;
+  Animation<double> starAnimation;
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.pink[400],
-      appBar: AppBar(
-        title: Text("WELCOME TO RABBIT"),
-        backgroundColor: Colors.redAccent,
-      ),
-      body: Center(
-          child: AnimatedContainer(
-        // เพิ่ม
-        width: size, //
-        height: size, //
-        color: Colors.orange[400], //
-        duration: Duration(milliseconds: 500), //
-      )),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.play_arrow),
-        onPressed: () {
-          setState(() {
-            size = size + 50; // เพิ่ม
-          });
-        },
+    return new MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: new Scaffold(
+        backgroundColor: Color(0xFF009688),
+        appBar: AppBar(
+          title: Text("The world of rabbits"),
+          backgroundColor: Colors.teal[900],
+        ),
+        body: new Center(
+          child: AnimatedOpacity(
+            opacity: currentOpacity,
+            duration: Duration(seconds: 1),
+            child: Image.asset("assets/icons/rabbit.png"),
+          ),
+        ),
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.play_arrow),
+          onPressed: () {
+            // เพิ่ม on pressed
+            setState(() {
+              currentOpacity = currentOpacity == 0 ? 1 : 0;
+            });
+          },
+          backgroundColor: Color(0xFF546E7A),
+        ),
       ),
     );
   }
 }
-
-// import 'package:flutter/material.dart';
-
-// class HomePage extends StatefulWidget {
-//   HomePage({Key key}) : super(key: key);
-
-//   @override
-//   HomePageState createState() => new HomePageState();
-// }
-
-// class HomePageState extends State<HomePage> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//         backgroundColor: Colors.blueAccent[400],
-//         appBar: AppBar(
-//           title: Text("WELCOME TO RABBIT"),
-//           backgroundColor: Colors.green,
-//         ),
-//         body: Center  (
-
-//           child: Text(''),
-//         ));
-//   }
-// }

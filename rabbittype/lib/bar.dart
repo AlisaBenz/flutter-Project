@@ -2,7 +2,7 @@ import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:rabbittype/home.dart';
 
-import 'Zodiac.dart';
+import 'Rabbit.dart';
 import 'about.dart';
 import 'feed.dart';
 import 'home.dart';
@@ -17,7 +17,7 @@ class _BarNavyState extends State<BarNavy> {
   int _selectedIndex = 0;
   final List<Widget> _children = [
     HomePage(),
-    ZodiacPage(),
+    RabbitPage(),
     FeedPage(),
     AboutMePage()
   ];
@@ -40,10 +40,6 @@ class _BarNavyState extends State<BarNavy> {
     super.dispose();
   }
 
-// onItemSelected: (index) {
-//           setState(() => _selectedIndex = index);
-//           _pageController.jumpToPage(index);
-//         },
   @override
   Widget build(BuildContext context) {
     return Scaffold(

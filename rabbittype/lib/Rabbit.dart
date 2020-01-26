@@ -4,14 +4,14 @@ import 'package:http/http.dart' as http;
 import 'top.dart';
 import 'topdetail.dart';
 
-class ZodiacPage extends StatefulWidget {
+class RabbitPage extends StatefulWidget {
   @override
-  ZodiacPageState createState() {
-    return new ZodiacPageState();
+  RabbitPageState createState() {
+    return new RabbitPageState();
   }
 }
 
-class ZodiacPageState extends State<ZodiacPage> {
+class RabbitPageState extends State<RabbitPage> {
   var url =
       "https://raw.githubusercontent.com/AlisaBenz/flutter-Project/master/rabbittype/assets/icons/top.json";
 

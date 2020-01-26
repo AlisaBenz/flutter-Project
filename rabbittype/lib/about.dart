@@ -15,17 +15,19 @@ class AboutMePageState extends State<AboutMePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.pink[400],
+      backgroundColor: Colors.teal[100],
       appBar: AppBar(
         title: Text("animation"),
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.teal,
       ),
       body: Center(
           child: AnimatedContainer(
+        child: Image.asset("assets/icons/RR1.png"),
+
         // เพิ่ม
         width: size, //
         height: size, //
-        color: Colors.orange[400], //
+        color: Colors.cyan[600], //
         duration: Duration(milliseconds: 500), //
       )),
       floatingActionButton: FloatingActionButton(
