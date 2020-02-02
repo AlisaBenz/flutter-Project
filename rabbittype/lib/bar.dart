@@ -59,7 +59,7 @@ class _BarNavyState extends State<BarNavy> {
             icon: Icon(Icons.fastfood),
           ),
           BottomNavigationBarItem(
-            title: Text('Me'),
+            title: Text('Aanimation'),
             icon: Icon(Icons.face),
           ),
         ],

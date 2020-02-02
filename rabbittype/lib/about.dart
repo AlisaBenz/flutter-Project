@@ -17,7 +17,7 @@ class AboutMePageState extends State<AboutMePage> {
     return Scaffold(
       backgroundColor: Colors.teal[100],
       appBar: AppBar(
-        title: Text("animation"),
+        title: Text("Rabbit animation"),
         backgroundColor: Colors.teal,
       ),
       body: Center(
